@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>時間割</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="script.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <div class="normal">
+                <h1>時間割</h1>
+                <div class="space"></div>
+                <div class="info">
+                    <p>一週間分の時間割を一度に閲覧できます。</p>
+                    <strong>注意: このリンクを知らない人と共有しないで下さい。</strong>
+                </div>
+            </div>
+            <div class="week">
+                <div class="flex-container">
+                    <p>クラス</p>
+                    <select class="frame" id="classes" value="Default">
+                        <option value="1-5">１-５</option>
+                        <option value="1-4">１-４</option>
+                    </select>
+                </div>
+                <div class="space"></div>
+                <div class="flex-container">
+                    <p>日付　</p>
+                    <div class="frame">
+                        <div class="flex-container">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <p>9/8 ~ 8/2</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="button">今週</div>
+                </div>
+            </div>
+            <div class="normal">
+                <div class="space"></div>
+                <div class="info-space">
+                    <div class="info-tab" id="right-tab">
+                        <table class="timetable">
+                            <tr>
+                                <td class="cell"></td>
+                                <td class="cell day">
+                                    <p>月</p>
+                                </td>
+                                <td class="cell day">
+                                    <p>火</p>
+                                </td>
+                                <td class="cell day">
+                                    <p>水</p>
+                                </td>
+                                <td class="cell day">
+                                    <p>木</p>
+                                </td>
+                                <td class="cell day">
+                                    <p>金</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>１</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>２</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>３</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>４</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>５</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                            <tr>
+                                <td class="cell time">
+                                    <p>６</p>
+                                </td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                                <td class="cell"><p class="subject"></p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="info-tab" id="left-tab">
+                        <h1>ボード</h1>
+                        <div class="info">
+                            <p>補足説明など</p>
+                        </div>
+                        <div class="border"></div>
+                        <div class="comment">
+                            <p>現在使用できません</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <div class="space"></div>
+                <div class="flex-container">
+                    <p style="color: #424242;">共有</p>
+                    <input class="linkcopy" type="text" value="https://www.youtube.com/watch?v=-CQ4JJbCvgY">
+                    <div class="linkcopy" id="linkcopy-button">リンクをコピー</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    background-color: #b2ebf2;
+}
+
+.main {
+    background-color: white;
+
+    min-height: 100px;
+    margin: 3%;
+
+    border-radius: 10px;
+}
+
+.normal, .week {
+    padding: 20px;
+}
+
+.info {
+    color: #70757a;
+}
+
+.week {
+    background-color: #b0bec5;
+
+    color: white;
+
+    box-shadow: 0 10px 25px 0 rgba(128, 128, 128, 0.3);
+}
+
+.table {
+    border-radius: 10px;
+}
+
+.table td {
+    padding: 10px 20px 10px 20px;
+}
+
+.frame {
+    background-color: white;
+
+    color: black;
+
+    padding: 0 10px 0 10px;
+
+    border-width: 0;
+    border-radius: 6px;
+}
+
+.frame i {
+    margin-top: 3.5px;
+}
+
+.info-space {
+    display: flex;
+
+    width: auto;
+    min-height: 500px;
+}
+
+.info-tab {
+    display: inline-block;
+
+    min-height: 500px;
+}
+
+#right-tab {
+    background-color: #ffe082;
+
+    width: 100%;
+    max-width: 600px;
+
+    border-radius: 10px 0 0 10px;
+}
+
+#left-tab {
+    background-color: white;
+
+    width: calc(100% - 300px);
+
+    padding: 10px;
+
+    border: solid #f5f5f5;
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.comment {
+    background-color: white;
+
+    width: calc(100% - 5.3);
+    height: calc(100% - 100px);
+
+    border: 2px solid #f5f5f5;
+    border-radius: 2px;
+}
+
+.timetable {
+    margin: 10px;
+
+    border-spacing: 10px 10px;
+}
+
+.cell {
+    background-color: #ffecb3;
+
+    color: white;
+    font-size: 35px;
+
+    width: 10vmin;
+    height: 10vmin;
+
+    border-radius: 5px;
+}
+
+.cell > p {
+    padding-left: 24px;
+}
+
+.day {
+    background-color: #ffab91;
+}
+
+.time {
+    background-color: #ffcc80;
+}
+
+.subject {
+    color: #f5f5f5;
+    font-size: 28px;
+
+    transform: translateX(-10px);
+}
+
+.linkcopy {
+    display: inline-block;
+
+    background-color: white;
+
+    color: #bdbdbd;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 5px;
+}
+
+input .linkcopy {
+    color: #757575;
+}
+
+#linkcopy-button:hover {
+    background-color: #f5f5f5;
+
+    transition: 1s;
+}
+
+@media screen and (max-width: 577px) {
+    .main {
+        width: 94%;
+    }
+
+    .info-space {
+        display: block;
+
+        padding-left: 6px;
+    }
+
+    .info-tab {
+        min-height: 200px;
+    }
+
+    #right-tab {
+        display: inline-block;
+
+        width: auto;
+        height: 200;
+        
+        border-radius: 10px;
+    }
+
+    #left-tab {
+        width: 90%;
+        min-height: 100px;
+
+        padding: 10px;
+    
+        border: 2px solid #f5f5f5;
+        border-radius: 10px;
+    }
+
+    .cell { 
+        font-size: 17px;  
+
+        height: 10vmin;
+    }
+
+    .cell > p {
+        padding-left: 12.5px;
+    }
+}
